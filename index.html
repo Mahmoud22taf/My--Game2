@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nebula Dash — Vanilla JS Game</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>Nebula Dash</h1>
+    <p>Move with <b>← →</b> or <b>A D</b> • Dash with <b>Shift</b> • Pause <b>P</b> • Restart <b>R</b></p>
+  </header>
+
+  <main>
+    <canvas id="game" width="720" height="480" aria-label="Game canvas"></canvas>
+
+    <div class="hud" aria-live="polite">
+      <div>Score: <span id="score">0</span></div>
+      <div>Best: <span id="best">0</span></div>
+      <div>Lives: <span id="lives">3</span></div>
+      <div>Level: <span id="level">1</span></div>
+    </div>
+
+    <div id="overlay" class="overlay hidden" role="dialog" aria-modal="true">
+      <div class="panel">
+        <h2 id="stateTitle">Paused</h2>
+        <p id="stateText"></p>
+        <button id="resumeBtn">Resume</button>
+        <button id="restartBtn">Restart</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Your Name • <a href="https://github.com/YOUR_USERNAME/nebula-dash" target="_blank" rel="noopener">View Code on GitHub</a></p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
